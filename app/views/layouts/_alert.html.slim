@@ -1,5 +1,12 @@
 - if flash[:warning]
   div class="alert alert-warning alert-dismissible fade show" role="alert"
-    strong Holy guacamole!
-    | You should check in on some of those fields below.
+    = flash[:warning]
+    button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+- if flash[:success]
+  div class="alert alert-success alert-dismissible fade show" role="alert"
+    = flash[:success]
+    button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+- if flash[:info]
+  div class="alert alert-info alert-dismissible fade show" role="alert"
+    = flash[:info]
     button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"

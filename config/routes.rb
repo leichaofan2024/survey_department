@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "welcome#index"
+  get "export_excel" => "welcome#export_excel"
+  post 'upload_file' => 'welcome#upload_file'
+  get 'upload_files_show' => "welcome#upload_files_show"
 end

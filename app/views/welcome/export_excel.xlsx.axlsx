@@ -1,0 +1,5 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Buttons") do |sheet|
+  sheet.add_row ['1', '2', '3']
+  sheet.add_row ['wo', 'hen', 'happy']
+end

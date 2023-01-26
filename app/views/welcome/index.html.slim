@@ -1,2 +1,7 @@
 
 p 这是测试
+= link_to "export", export_excel_path(format: "xlsx"), class: "btn btn-success"
+
+= form_tag upload_file_path, multipart: true
+  = file_field_tag 'attachment[]', :multiple => true 
+  = submit_tag "upload", class: "btn btn-primary"
