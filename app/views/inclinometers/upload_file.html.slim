@@ -1,0 +1,17 @@
+p class="pull-right"
+  = form_tag download_file_inclinometers_path(format: "xlsx"), method: :post, class: "form-horizontal"
+    = hidden_field_tag :result_table, {result_table: @result_table}.to_json
+    = submit_tag "下载", data: {confirm: "确定要下载吗？"}, class: "btn btn-success pull-right"
+table class="table table-striped"
+  thead
+    tr
+      - @result_table[0].each do |thead|
+        th = thead
+  tboday
+    - @result_table[1..@result_table.count].each do |one_row_data|
+      tr
+        - one_row_data.each do |tdata|
+          td = tdata
+
+
+

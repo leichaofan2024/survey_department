@@ -1,7 +1,3 @@
-- if flash[:warning]
-  div class="alert alert-warning alert-dismissible fade show" role="alert"
-    = flash[:warning]
-    button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
 - if flash[:success]
   div class="alert alert-success alert-dismissible fade show" role="alert"
     = flash[:success]
@@ -10,3 +6,12 @@
   div class="alert alert-info alert-dismissible fade show" role="alert"
     = flash[:info]
     button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+- if flash[:warning]
+  div class="alert alert-warning alert-dismissible fade show" role="alert"
+    = flash[:warning]
+    button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+- if flash[:danger]
+  div class="alert alert-danger alert-dismissible fade show" role="alert"
+    = flash[:danger]
+    button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+

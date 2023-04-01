@@ -1,0 +1,7 @@
+h1 测斜数据解算
+hr
+= form_tag upload_file_inclinometers_path, multipart: true
+  div class="mb-3"
+    = label_tag 'attachment[]', '选择测斜及坐标文件', class: "form-label"
+    = file_field_tag 'attachment[]', :multiple => true, class: "form-control"
+  = submit_tag "解算", class: "btn btn-success"

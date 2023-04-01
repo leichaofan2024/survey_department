@@ -56,6 +56,8 @@ gem 'slim-rails'
 gem 'caxlsx'
 gem 'caxlsx_rails'
 gem "roo", "~> 2.9.0"
+gem 'roo-xls'
+gem 'rubyXL'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]

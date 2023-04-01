@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: "Result") do |sheet|
+  @result_table.each do |one_row_data|
+    sheet.add_row one_row_data
+  end
+end

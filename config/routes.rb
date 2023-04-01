@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   get "export_excel" => "welcome#export_excel"
   post 'upload_file' => 'welcome#upload_file'
   get 'upload_files_show' => "welcome#upload_files_show"
+  resources "inclinometers", only: :index do
+    collection do
+      post :upload_file
+      post :download_file
+    end
+  end
+
 end
